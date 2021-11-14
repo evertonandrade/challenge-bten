@@ -1,0 +1,43 @@
+<div *ngIf="loading">
+  <svg class="spinner" viewBox="0 0 50 50">
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+  </svg>
+</div>
+
+<div class="wrapper" *ngIf="!loading">
+  <header class="header">
+    <a href="javascript:void(0)" class="logo">
+      <img
+        src="https://mls1iejiacfa.i.optimole.com/-rMZmvQ.sMX2~24f5f/w:auto/h:auto/q:90/https://www.bten.com.br/wp-content/uploads/2020/06/favico.png"
+        alt="Logo">
+    </a>
+    <h1>Login</h1>
+  </header>
+
+  <form class="form" novalidate (ngSubmit)="loginAccount()" [formGroup]="signinForm">
+    <label for="email">
+      Email
+      <input class="field" type="email" id="email" formControlName="email" autofocus>
+    </label>
+    <span *ngIf="displayMessage.email" class="text-danger">
+      <p [innerHTML]="displayMessage.email"></p>
+    </span>
+    <label for="password">
+      Password
+      <input class="field" type="password" id="password" formControlName="password">
+    </label>
+    <span *ngIf="displayMessage.password" class="text-danger">
+      <p [innerHTML]="displayMessage.password"></p>
+    </span>
+    <button class="button" type="submit">Sign in</button>
+  </form>
+
+  <div class="create-account">
+    <p>
+      <a href="javascript:void(0)">Forgot password?</a>
+    </p>
+    <p>
+      New to Bten? <a routerLink="/sign-up" class="text-right">Create an account.</a>
+    </p>
+  </div>
+</div>
