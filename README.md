@@ -1,7 +1,7 @@
 # Challenge Bten Frontend
 
 ## Resultado
-![Dashboard](https://i.ibb.co/gMzbBPT/bten.png)
+![Dashboard](https://i.ibb.co/gFLqFyX/bten.png)
 
 ## Deploy no Netlify
 [**ChallengeBtenFrontend**](https://eloquent-brahmagupta-d58dbe.netlify.app/sign-in)
