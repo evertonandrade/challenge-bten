@@ -4,7 +4,7 @@
 ![Dashboard](https://i.ibb.co/gFLqFyX/bten.png)
 
 ## Deploy no Netlify
-[**ChallengeBtenFrontend**](https://eloquent-brahmagupta-d58dbe.netlify.app/sign-in)
+:link: [ChallengeBtenFrontend](https://eloquent-brahmagupta-d58dbe.netlify.app/sign-in)
 
 ## Como executar o projeto
 
